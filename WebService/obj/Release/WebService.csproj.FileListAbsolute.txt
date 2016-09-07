@@ -1,0 +1,63 @@
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\bin\roslyn\csc.exe
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\bin\roslyn\vbc.exe
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\bin\roslyn\VBCSCompiler.exe
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\bin\WebService.dll.config
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\bin\WebService.dll
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\bin\WebService.pdb
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\bin\EntityFramework.dll
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\bin\EntityFramework.SqlServer.dll
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\bin\Newtonsoft.Json.dll
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\bin\System.Net.Http.Formatting.dll
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\bin\System.Web.Http.dll
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\bin\System.Web.Http.WebHost.dll
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\bin\EntityFramework.xml
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\bin\EntityFramework.SqlServer.xml
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\bin\Newtonsoft.Json.xml
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\bin\System.Net.Http.Formatting.xml
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\bin\System.Web.Http.xml
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\bin\System.Web.Http.WebHost.xml
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\obj\Release\WebService.dll
+C:\Users\oykukapcak\Documents\Visual Studio 2015\Projects\WebService\WebService\obj\Release\WebService.pdb
+D:\Users\SUUSER\Desktop\WebService\WebService\bin\roslyn\csc.exe
+D:\Users\SUUSER\Desktop\WebService\WebService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Users\SUUSER\Desktop\WebService\WebService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Users\SUUSER\Desktop\WebService\WebService\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Users\SUUSER\Desktop\WebService\WebService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Users\SUUSER\Desktop\WebService\WebService\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Users\SUUSER\Desktop\WebService\WebService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Users\SUUSER\Desktop\WebService\WebService\bin\roslyn\System.Collections.Immutable.dll
+D:\Users\SUUSER\Desktop\WebService\WebService\bin\roslyn\System.Reflection.Metadata.dll
+D:\Users\SUUSER\Desktop\WebService\WebService\bin\roslyn\vbc.exe
+D:\Users\SUUSER\Desktop\WebService\WebService\bin\roslyn\VBCSCompiler.exe
+D:\Users\SUUSER\Desktop\WebService\WebService\bin\roslyn\VBCSCompiler.exe.config
+D:\Users\SUUSER\Desktop\WebService\WebService\bin\WebService.dll.config
+D:\Users\SUUSER\Desktop\WebService\WebService\bin\WebService.dll
+D:\Users\SUUSER\Desktop\WebService\WebService\bin\WebService.pdb
+D:\Users\SUUSER\Desktop\WebService\WebService\bin\EntityFramework.dll
+D:\Users\SUUSER\Desktop\WebService\WebService\bin\EntityFramework.SqlServer.dll
+D:\Users\SUUSER\Desktop\WebService\WebService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Users\SUUSER\Desktop\WebService\WebService\bin\Newtonsoft.Json.dll
+D:\Users\SUUSER\Desktop\WebService\WebService\bin\System.Net.Http.Formatting.dll
+D:\Users\SUUSER\Desktop\WebService\WebService\bin\System.Web.Http.dll
+D:\Users\SUUSER\Desktop\WebService\WebService\bin\System.Web.Http.WebHost.dll
+D:\Users\SUUSER\Desktop\WebService\WebService\bin\EntityFramework.xml
+D:\Users\SUUSER\Desktop\WebService\WebService\bin\EntityFramework.SqlServer.xml
+D:\Users\SUUSER\Desktop\WebService\WebService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Users\SUUSER\Desktop\WebService\WebService\bin\Newtonsoft.Json.xml
+D:\Users\SUUSER\Desktop\WebService\WebService\bin\System.Net.Http.Formatting.xml
+D:\Users\SUUSER\Desktop\WebService\WebService\bin\System.Web.Http.xml
+D:\Users\SUUSER\Desktop\WebService\WebService\bin\System.Web.Http.WebHost.xml
+D:\Users\SUUSER\Desktop\WebService\WebService\obj\Release\WebService.csprojResolveAssemblyReference.cache
+D:\Users\SUUSER\Desktop\WebService\WebService\obj\Release\WebService.dll
+D:\Users\SUUSER\Desktop\WebService\WebService\obj\Release\WebService.pdb

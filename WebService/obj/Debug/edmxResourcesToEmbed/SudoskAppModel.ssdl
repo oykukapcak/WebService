@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="sudoskappdbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BookedItems">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ItemId" Type="int" Nullable="false" />
+    <Property Name="BeginDate" Type="date" Nullable="false" />
+    <Property Name="EndDate" Type="date" Nullable="false" />
+    <Property Name="EventId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Categories">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ConfirmedItems">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ItemId" Type="int" Nullable="false" />
+    <Property Name="BeginDate" Type="date" Nullable="false" />
+    <Property Name="EndDate" Type="date" Nullable="false" />
+    <Property Name="EventId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Events">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="text" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Items">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CategoryId" Type="int" Nullable="false" />
+    <Property Name="Description" Type="text" Nullable="false" />
+    <Property Name="Status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MemberRequests">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="Surname" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RequestedItems">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ItemId" Type="int" Nullable="false" />
+    <Property Name="BeginDate" Type="date" Nullable="false" />
+    <Property Name="EndDate" Type="date" Nullable="false" />
+    <Property Name="EventId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="Surname" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_BookedItems_ToEvents">
+    <End Role="Events" Type="Self.Events" Multiplicity="1" />
+    <End Role="BookedItems" Type="Self.BookedItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BookedItems">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BookedItems_ToItems">
+    <End Role="Items" Type="Self.Items" Multiplicity="1" />
+    <End Role="BookedItems" Type="Self.BookedItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Items">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BookedItems">
+        <PropertyRef Name="ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BookedItems_ToUsers">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="BookedItems" Type="Self.BookedItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BookedItems">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConfirmedItems_ToEvents">
+    <End Role="Events" Type="Self.Events" Multiplicity="1" />
+    <End Role="ConfirmedItems" Type="Self.ConfirmedItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ConfirmedItems">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConfirmedItems_ToItems">
+    <End Role="Items" Type="Self.Items" Multiplicity="1" />
+    <End Role="ConfirmedItems" Type="Self.ConfirmedItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Items">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ConfirmedItems">
+        <PropertyRef Name="ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConfirmedItems_ToUsers">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="ConfirmedItems" Type="Self.ConfirmedItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ConfirmedItems">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RequestedItems_ToEvents">
+    <End Role="Events" Type="Self.Events" Multiplicity="1" />
+    <End Role="RequestedItems" Type="Self.RequestedItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Events">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RequestedItems">
+        <PropertyRef Name="EventId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RequestedItems_ToItems">
+    <End Role="Items" Type="Self.Items" Multiplicity="1" />
+    <End Role="RequestedItems" Type="Self.RequestedItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Items">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RequestedItems">
+        <PropertyRef Name="ItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RequestedItems_ToUsers">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="RequestedItems" Type="Self.RequestedItems" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="RequestedItems">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="sudoskappdbModelStoreContainer">
+    <EntitySet Name="BookedItems" EntityType="Self.BookedItems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Categories" EntityType="Self.Categories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ConfirmedItems" EntityType="Self.ConfirmedItems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Events" EntityType="Self.Events" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Items" EntityType="Self.Items" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MemberRequests" EntityType="Self.MemberRequests" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RequestedItems" EntityType="Self.RequestedItems" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_BookedItems_ToEvents" Association="Self.FK_BookedItems_ToEvents">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="BookedItems" EntitySet="BookedItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BookedItems_ToItems" Association="Self.FK_BookedItems_ToItems">
+      <End Role="Items" EntitySet="Items" />
+      <End Role="BookedItems" EntitySet="BookedItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BookedItems_ToUsers" Association="Self.FK_BookedItems_ToUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="BookedItems" EntitySet="BookedItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConfirmedItems_ToEvents" Association="Self.FK_ConfirmedItems_ToEvents">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="ConfirmedItems" EntitySet="ConfirmedItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConfirmedItems_ToItems" Association="Self.FK_ConfirmedItems_ToItems">
+      <End Role="Items" EntitySet="Items" />
+      <End Role="ConfirmedItems" EntitySet="ConfirmedItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConfirmedItems_ToUsers" Association="Self.FK_ConfirmedItems_ToUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="ConfirmedItems" EntitySet="ConfirmedItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RequestedItems_ToEvents" Association="Self.FK_RequestedItems_ToEvents">
+      <End Role="Events" EntitySet="Events" />
+      <End Role="RequestedItems" EntitySet="RequestedItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RequestedItems_ToItems" Association="Self.FK_RequestedItems_ToItems">
+      <End Role="Items" EntitySet="Items" />
+      <End Role="RequestedItems" EntitySet="RequestedItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RequestedItems_ToUsers" Association="Self.FK_RequestedItems_ToUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="RequestedItems" EntitySet="RequestedItems" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
